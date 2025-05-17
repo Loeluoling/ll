@@ -33,19 +33,19 @@ pip install bfloat16==1.1 --no-binary=bfloat16 --no-cache-dir \
   --global-option="--include-dirs=$(python -c 'import numpy; print(numpy.get_include())')"
 
 3. 安装 OpenCV
-pip install opencv-python==4.5.5.64 -i https://mirror.baidu.com/pypi/simple
+pip install opencv-python==4.5.5.64 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-4. 安装 ONNX 相关包
+5. 安装 ONNX 相关包
   pip install \
   onnx==1.9.0 \
   onnxoptimizer==0.2.7 \
   onnxruntime==1.10.0 \
-  -i https://mirror.baidu.com/pypi/simple 
-5. 安装 PyTorch 和 TensorFlow
+  -i [https://mirror.baidu.com/pypi/simple](https://pypi.tuna.tsinghua.edu.cn/simple) 
+6. 安装 PyTorch 和 TensorFlow
   # PyTorch（通过 Conda 安装）
 conda install pytorch==1.10.1 torchvision==0.11.2 -c pytorch -y
 # TensorFlow
-pip install tensorflow==2.6.2 -i https://mirror.baidu.com/pypi/simple
+pip install tensorflow==2.6.2 -i [https://mirror.baidu.com/pypi/simple](https://pypi.tuna.tsinghua.edu.cn/simple)
 
 error:
 pip list 检查版本是否有冲突
